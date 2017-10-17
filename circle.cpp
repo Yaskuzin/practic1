@@ -1,4 +1,6 @@
+#include <cmath>
 #include "circle.h"
+#include "rectangle.h"
 
 using namespace std;
 void Circle::getInfo() {
@@ -6,6 +8,12 @@ void Circle::getInfo() {
 }
 
 Circle::Circle() {}
+
+Circle::Circle(FirstClass *rectangle) {
+    r = sqrt(pow(rectangle->getX(),2)+pow(rectangle->getY(),2)+pow(rectangle->getZ(),2));
+    teta = acos(rectangle->getZ()/(r));
+    fi = atan(rectangle->getY()/rectangle->getX());
+}
 
 Circle::Circle(double r, double teta, double fi) {
   setR(r);
