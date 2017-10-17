@@ -1,0 +1,8 @@
+//
+// Created by M17-612 on 17.10.2017.
+//
+
+#ifndef PRACTIC1_RECTANGLE_H
+#define PRACTIC1_RECTANGLE_H
+
+#endif //PRACTIC1_RECTANGLE_H
