@@ -3,5 +3,5 @@ project(practic1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp circle.h rectangle.h circle.cpp)
+set(SOURCE_FILES main.cpp circle.h rectangle.h circle.cpp rectangle.cpp)
 add_executable(practic1 ${SOURCE_FILES})
