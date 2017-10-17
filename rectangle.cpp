@@ -1,5 +1,8 @@
 #include "rectangle.h"
+#include "circle.h"
 #include <locale>
+#include <cmath>
+
 using namespace std;
 
 void FirstClass::getInfo() {
@@ -9,6 +12,12 @@ void FirstClass::getInfo() {
 
 
 FirstClass::FirstClass() {}
+FirstClass::FirstClass(Circle *circle){
+
+    x= circle->getR() * sin(circle->getTeta()) * cos(circle->getFi());
+    y= sin(circle->getR()) * sin(circle->getFi());
+    z= circle->getR() * cos(circle->getTeta());
+}
 
 FirstClass::FirstClass(double x, double y, double z)  {
     setX(x);

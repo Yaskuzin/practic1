@@ -6,12 +6,18 @@
 #define PRACTIC1_RECTANGLE_H
 
 #include <iostream>
+#include "circle.h"
 
 class FirstClass {
 private:
+
     double x,y,z;
 public:
     FirstClass();
+
+    FirstClass(Circle *circle);
+
+
 
     double getX() const;
 
